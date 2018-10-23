@@ -1,6 +1,6 @@
 # chartsProj
 
-Demo How to use Charts in IOS
+### Demo How to use Charts in IOS
 
 # Bar Chart Example
 

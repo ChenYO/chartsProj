@@ -4,7 +4,15 @@ Demo How to use Charts in IOS
 
 # Bar Chart Example
 
-  func setChart(dataPoints: [String], values: [Double]) {
+    override func viewDidLoad() {
+        super.viewDidLoad()    
+        months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
+
+        setChart(dataPoints: months, values: unitsSold)
+    }
+    
+    func setChart(dataPoints: [String], values: [Double]) {
       barChartView.noDataText = "You need to provide data for the chart."        
       // Set xAxis
       barChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: months)
@@ -21,5 +29,5 @@ Demo How to use Charts in IOS
       let chartDataSet = BarChartDataSet(values: dataEntries, label: "Units Sold")
       let chartData = BarChartData(dataSet: chartDataSet)
       barChartView.data = chartData
-  }
+    }
 

@@ -3,8 +3,8 @@
 Demo How to use Charts in IOS
 
 # Bar Chart Example
-`
-  func setChart(dataPoints: [String], values: [Double]) {
+
+  `func setChart(dataPoints: [String], values: [Double]) {
       barChartView.noDataText = "You need to provide data for the chart."
         
       // Set xAxis
@@ -22,5 +22,5 @@ Demo How to use Charts in IOS
       let chartDataSet = BarChartDataSet(values: dataEntries, label: "Units Sold")
       let chartData = BarChartData(dataSet: chartDataSet)
       barChartView.data = chartData
-  }
-`
+  }`
+

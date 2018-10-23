@@ -32,6 +32,7 @@
     }
 
 # Line Chart Example
+### Same as bar chart's function, just replace chart some of codes
 
     let lineChartDataSet = LineChartDataSet(values: dataEntries, label: "Units Sold")
     let lineChartData = LineChartData(dataSet: lineChartDataSet)    

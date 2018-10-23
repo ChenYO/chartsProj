@@ -32,6 +32,7 @@
     }
 
 # Line Chart Example
+### Same as bar chart's function, just replace chart some codes
 
     let lineChartDataSet = LineChartDataSet(values: dataEntries, label: "Units Sold")
     let lineChartData = LineChartData(dataSet: lineChartDataSet)    
@@ -54,3 +55,26 @@
         colors.append(color)
     }    
     pieChartDataSet.colors = colors
+
+# Bubble Chart Example
+    var dataEntries: [BubbleChartDataEntry] = []
+    var dataEntries2: [BubbleChartDataEntry] = []
+    let unitsSold2 = [10.0, 8.0, 6.0, 4.0, 2.0, 6.0, 10.0, 8.0, 6.0, 4.0, 2.0, 6.0]
+           
+    for i in 0..<dataPoints.count {
+        let dataEntry = BubbleChartDataEntry(x: Double(i), y: values[i], size: CGFloat(values[i]))
+        dataEntries.append(dataEntry)
+    }
+        
+    for i in 0..<dataPoints.count {
+        let dataEntry = BubbleChartDataEntry(x: Double(i), y: unitsSold2[i], size: CGFloat(values[i]))
+        dataEntries2.append(dataEntry)
+    }
+        
+    let bubbleDataSet = BubbleChartDataSet(values: dataEntries, label: "Units Sold")
+    bubbleDataSet.setColor(ChartColorTemplates.colorful()[0], alpha: 0.5)
+    let bubbleDataSet2 = BubbleChartDataSet(values: dataEntries2, label: "Units Sold")
+    bubbleDataSet2.setColor(ChartColorTemplates.colorful()[1], alpha: 0.5)
+    let bubbleData = BubbleChartData(dataSets: [bubbleDataSet, bubbleDataSet2])
+        
+    bubbleChartView.data = bubbleData

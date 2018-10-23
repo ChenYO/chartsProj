@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hSJ-us-ODY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scatter Chart View Controller-->
+        <scene sceneID="TlR-IJ-Qdo">
+            <objects>
+                <viewController id="hSJ-us-ODY" customClass="ScatterChartViewController" customModule="chartsProj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ARj-DG-7oR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="voQ-0d-aby" customClass="ScatterChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="voQ-0d-aby" firstAttribute="leading" secondItem="54a-sP-HoK" secondAttribute="leading" id="4EV-Gq-PqD"/>
+                            <constraint firstItem="voQ-0d-aby" firstAttribute="top" secondItem="ARj-DG-7oR" secondAttribute="top" id="J0m-OK-Gpr"/>
+                            <constraint firstItem="voQ-0d-aby" firstAttribute="trailing" secondItem="54a-sP-HoK" secondAttribute="trailing" id="Uac-VO-vtg"/>
+                            <constraint firstItem="voQ-0d-aby" firstAttribute="bottom" secondItem="54a-sP-HoK" secondAttribute="bottom" id="roN-3U-l99"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="54a-sP-HoK"/>
+                    </view>
+                    <connections>
+                        <outlet property="scatterChartView" destination="voQ-0d-aby" id="3eQ-6S-igh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="64r-87-Whk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2517.5999999999999" y="580.65967016491754"/>
+        </scene>
+    </scenes>
+</document>

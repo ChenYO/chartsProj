@@ -17,7 +17,7 @@ class ChartViewController: UIViewController {
         super.viewDidLoad()
         let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
         let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0]
-        
+    
         setChart(dataPoints: months, values: unitsSold)
     }
 
@@ -28,15 +28,28 @@ class ChartViewController: UIViewController {
     
     func setChart(dataPoints: [String], values: [Double]) {
         var dataEntries: [ChartDataEntry] = []
+        var dataEntries2: [ChartDataEntry] = []
+        
+        let unitsSold2 = [10.0, 8.0, 6.0, 4.0, 2.0, 6.0]
         
         for i in 0..<dataPoints.count {
             let dataEntry = ChartDataEntry(x: Double(i), y: values[i])
             dataEntries.append(dataEntry)
         }
+        for i in 0..<dataPoints.count {
+            let dataEntry = ChartDataEntry(x: Double(i), y: unitsSold2[i])
+            dataEntries2.append(dataEntry)
+        }
         
         // Set line chart data
         let lineChartDataSet = LineChartDataSet(values: dataEntries, label: "Units Sold")
+        let lineChartDataSet2 = LineChartDataSet(values: dataEntries2, label: "Units Sold")
+        
+        lineChartDataSet2.setColor(UIColor(red: CGFloat(155/255), green: CGFloat(1/255), blue: CGFloat(1/255), alpha: 1))
+        lineChartDataSet2.setCircleColor(UIColor(red: CGFloat(155/255), green: CGFloat(1/255), blue: CGFloat(1/255), alpha: 1))
+        
         let lineChartData = LineChartData(dataSet: lineChartDataSet)
+        lineChartData.addDataSet(lineChartDataSet2)
         
         lineChartView.data = lineChartData
         

@@ -13,12 +13,11 @@ class ChartViewController: UIViewController {
 
     @IBOutlet weak var lineChartView: LineChartView!
     @IBOutlet weak var pieChartView: PieChartView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
-        let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0]
-    
-        setChart(dataPoints: months, values: unitsSold)
+        let dataSet = DataSet()
+        setChart(dataPoints: dataSet.months, values: dataSet.data)
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,7 +29,7 @@ class ChartViewController: UIViewController {
         var dataEntries: [ChartDataEntry] = []
         var dataEntries2: [ChartDataEntry] = []
         
-        let unitsSold2 = [10.0, 8.0, 6.0, 4.0, 2.0, 6.0]
+        let unitsSold2 = [10.0, 8.0, 6.0, 4.0, 2.0, 6.0, 10.0, 8.0, 6.0, 4.0, 2.0, 6.0]
         
         for i in 0..<dataPoints.count {
             let dataEntry = ChartDataEntry(x: Double(i), y: values[i])
@@ -48,9 +47,8 @@ class ChartViewController: UIViewController {
         lineChartDataSet2.setColor(UIColor(red: CGFloat(155/255), green: CGFloat(1/255), blue: CGFloat(1/255), alpha: 1))
         lineChartDataSet2.setCircleColor(UIColor(red: CGFloat(155/255), green: CGFloat(1/255), blue: CGFloat(1/255), alpha: 1))
         
-        let lineChartData = LineChartData(dataSet: lineChartDataSet)
-        lineChartData.addDataSet(lineChartDataSet2)
-        
+        let lineChartData = LineChartData(dataSets: [lineChartDataSet, lineChartDataSet2])
+      
         lineChartView.data = lineChartData
         
         // Set pie chart data

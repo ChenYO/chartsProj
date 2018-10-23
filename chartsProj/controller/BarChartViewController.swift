@@ -13,15 +13,12 @@ class BarChartViewController: UIViewController {
 
     @IBOutlet weak var barChartView: BarChartView!
     
-    var months: [String]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-        let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
-
-        setChart(dataPoints: months, values: unitsSold)
+        let dataSet = DataSet()
+        setChart(dataPoints: dataSet.months, values: dataSet.data)
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,7 +29,7 @@ class BarChartViewController: UIViewController {
         barChartView.noDataText = "You need to provide data for the chart."
         
         // Set xAxis
-        barChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: months)
+        barChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: dataPoints)
         barChartView.xAxis.granularity = 1
         barChartView.xAxis.labelPosition = .bottom
         

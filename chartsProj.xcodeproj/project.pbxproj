@@ -14,6 +14,11 @@
 		76FB5A7A217DBC59001FBE51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FB5A78217DBC59001FBE51 /* LaunchScreen.storyboard */; };
 		76FB5A83217DC239001FBE51 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB5A82217DC239001FBE51 /* BarChartViewController.swift */; };
 		76FB5A85217DC245001FBE51 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB5A84217DC245001FBE51 /* ChartViewController.swift */; };
+		76FB5A87217EC020001FBE51 /* BubbleChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB5A86217EC020001FBE51 /* BubbleChartViewController.swift */; };
+		76FB5A8C217EC171001FBE51 /* BarChart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FB5A8B217EC171001FBE51 /* BarChart.storyboard */; };
+		76FB5A90217EC604001FBE51 /* LineAndPieChart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FB5A8F217EC604001FBE51 /* LineAndPieChart.storyboard */; };
+		76FB5A92217EC62B001FBE51 /* BubbleChart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FB5A91217EC62B001FBE51 /* BubbleChart.storyboard */; };
+		76FB5A94217EC768001FBE51 /* dataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB5A93217EC768001FBE51 /* dataSet.swift */; };
 		BAFA0F1C5DC13D7FE032A505 /* Pods_chartsProj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC716F8868739AC6D3F285B /* Pods_chartsProj.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +33,11 @@
 		76FB5A7B217DBC59001FBE51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76FB5A82217DC239001FBE51 /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
 		76FB5A84217DC245001FBE51 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		76FB5A86217EC020001FBE51 /* BubbleChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleChartViewController.swift; sourceTree = "<group>"; };
+		76FB5A8B217EC171001FBE51 /* BarChart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BarChart.storyboard; sourceTree = "<group>"; };
+		76FB5A8F217EC604001FBE51 /* LineAndPieChart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LineAndPieChart.storyboard; sourceTree = "<group>"; };
+		76FB5A91217EC62B001FBE51 /* BubbleChart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BubbleChart.storyboard; sourceTree = "<group>"; };
+		76FB5A93217EC768001FBE51 /* dataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataSet.swift; sourceTree = "<group>"; };
 		AAEBE65EC9482E002A69D231 /* Pods-chartsProj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chartsProj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chartsProj/Pods-chartsProj.debug.xcconfig"; sourceTree = "<group>"; };
 		C5B5730E7A0AB6E4D9650CE0 /* Pods-chartsProj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chartsProj.release.xcconfig"; path = "Pods/Target Support Files/Pods-chartsProj/Pods-chartsProj.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,8 +85,9 @@
 			isa = PBXGroup;
 			children = (
 				76FB5A6F217DBC55001FBE51 /* AppDelegate.swift */,
+				76FB5A95217EC76D001FBE51 /* model */,
 				76FB5A81217DC21B001FBE51 /* controller */,
-				76FB5A73217DBC55001FBE51 /* Main.storyboard */,
+				76FB5A8A217EC0F2001FBE51 /* storyboard */,
 				76FB5A76217DBC59001FBE51 /* Assets.xcassets */,
 				76FB5A78217DBC59001FBE51 /* LaunchScreen.storyboard */,
 				76FB5A7B217DBC59001FBE51 /* Info.plist */,
@@ -90,8 +101,28 @@
 				76FB5A71217DBC55001FBE51 /* ViewController.swift */,
 				76FB5A82217DC239001FBE51 /* BarChartViewController.swift */,
 				76FB5A84217DC245001FBE51 /* ChartViewController.swift */,
+				76FB5A86217EC020001FBE51 /* BubbleChartViewController.swift */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		76FB5A8A217EC0F2001FBE51 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				76FB5A91217EC62B001FBE51 /* BubbleChart.storyboard */,
+				76FB5A8F217EC604001FBE51 /* LineAndPieChart.storyboard */,
+				76FB5A8B217EC171001FBE51 /* BarChart.storyboard */,
+				76FB5A73217DBC55001FBE51 /* Main.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		76FB5A95217EC76D001FBE51 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				76FB5A93217EC768001FBE51 /* dataSet.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		A917394868BA4063D32F9CF4 /* Frameworks */ = {
@@ -163,6 +194,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				76FB5A7A217DBC59001FBE51 /* LaunchScreen.storyboard in Resources */,
+				76FB5A8C217EC171001FBE51 /* BarChart.storyboard in Resources */,
+				76FB5A90217EC604001FBE51 /* LineAndPieChart.storyboard in Resources */,
+				76FB5A92217EC62B001FBE51 /* BubbleChart.storyboard in Resources */,
 				76FB5A77217DBC59001FBE51 /* Assets.xcassets in Resources */,
 				76FB5A75217DBC55001FBE51 /* Main.storyboard in Resources */,
 			);
@@ -216,7 +250,9 @@
 			files = (
 				76FB5A72217DBC55001FBE51 /* ViewController.swift in Sources */,
 				76FB5A85217DC245001FBE51 /* ChartViewController.swift in Sources */,
+				76FB5A94217EC768001FBE51 /* dataSet.swift in Sources */,
 				76FB5A70217DBC55001FBE51 /* AppDelegate.swift in Sources */,
+				76FB5A87217EC020001FBE51 /* BubbleChartViewController.swift in Sources */,
 				76FB5A83217DC239001FBE51 /* BarChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

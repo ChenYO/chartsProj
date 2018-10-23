@@ -48,7 +48,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Other Chart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JOg-Hr-6qS">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Line and Pie Chart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JOg-Hr-6qS">
                                                     <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -59,6 +59,26 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="7Zi-u2-Fz7" kind="show" id="ZCQ-zS-3xd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="hb2-2z-HeQ" style="IBUITableViewCellStyleDefault" id="P6K-no-P3S">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P6K-no-P3S" id="mIE-dB-V3X">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Bubble Chart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hb2-2z-HeQ">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="exJ-PS-4iz" kind="show" id="q1W-jN-bCe"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -116,7 +136,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="So3-Qb-P8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2600.8000000000002" y="505.99700149925042"/>
+            <point key="canvasLocation" x="2601" y="141"/>
+        </scene>
+        <!--Bubble Chart View Controller-->
+        <scene sceneID="Pct-er-4nM">
+            <objects>
+                <viewController id="exJ-PS-4iz" customClass="BubbleChartViewController" customModule="chartsProj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2j3-du-v59">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XDL-Rv-AKz" customClass="BubbleChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XDL-Rv-AKz" firstAttribute="trailing" secondItem="yII-jt-LBn" secondAttribute="trailing" id="KOL-3v-m51"/>
+                            <constraint firstItem="XDL-Rv-AKz" firstAttribute="leading" secondItem="yII-jt-LBn" secondAttribute="leading" id="jkz-SF-4kh"/>
+                            <constraint firstItem="XDL-Rv-AKz" firstAttribute="bottom" secondItem="yII-jt-LBn" secondAttribute="bottom" id="rF0-A2-AHD"/>
+                            <constraint firstItem="XDL-Rv-AKz" firstAttribute="top" secondItem="yII-jt-LBn" secondAttribute="top" id="u5q-gk-MG0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yII-jt-LBn"/>
+                    </view>
+                    <connections>
+                        <outlet property="bubbleChartView" destination="XDL-Rv-AKz" id="4CW-XO-5eX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YyI-70-s5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2600.8000000000002" y="884.70764617691157"/>
         </scene>
         <!--Bar Chart View Controller-->
         <scene sceneID="6q5-3S-vor">
@@ -147,7 +197,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9aF-PJ-DGp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2600.8000000000002" y="-189.3553223388306"/>
+            <point key="canvasLocation" x="2601" y="-651"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JYk-9t-l5O">

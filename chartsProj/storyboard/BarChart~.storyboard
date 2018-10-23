@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vXW-8W-WIJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="zcr-2S-YN6">
+            <objects>
+                <tableViewController id="7or-Wp-Ab8" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5wX-WM-2Xx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="MNY-ls-n1L">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="vDS-A5-Q2X" style="IBUITableViewCellStyleDefault" id="1cj-bI-DzF">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1cj-bI-DzF" id="hDM-rX-4FW">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Bar Chart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vDS-A5-Q2X">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="osK-0H-lGG" kind="show" id="rht-4S-ndJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="JOg-Hr-6qS" style="IBUITableViewCellStyleDefault" id="OVh-tk-lwg">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OVh-tk-lwg" id="P4t-bZ-gZK">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Line and Pie Chart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JOg-Hr-6qS">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="7Zi-u2-Fz7" kind="show" id="ZCQ-zS-3xd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="hb2-2z-HeQ" style="IBUITableViewCellStyleDefault" id="P6K-no-P3S">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P6K-no-P3S" id="mIE-dB-V3X">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Bubble Chart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hb2-2z-HeQ">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="exJ-PS-4iz" kind="show" id="q1W-jN-bCe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="7or-Wp-Ab8" id="2Uw-Ok-cgs"/>
+                            <outlet property="delegate" destination="7or-Wp-Ab8" id="Ruz-kW-bXS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="1LG-mj-9Tn"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vLx-J5-RX7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1816.8" y="121.88905547226388"/>
+        </scene>
+        <!--Chart View Controller-->
+        <scene sceneID="PpR-yF-fO2">
+            <objects>
+                <viewController id="7Zi-u2-Fz7" customClass="ChartViewController" customModule="chartsProj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LyZ-Em-rkM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXO-WT-RfN" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="64" width="375" height="290"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="290" id="inZ-de-eGp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XdN-lk-iyC" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="336" width="375" height="331"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="331" id="ArR-wm-iKw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UXO-WT-RfN" firstAttribute="trailing" secondItem="v6R-VQ-gWT" secondAttribute="trailing" id="3PD-Wx-RVz"/>
+                            <constraint firstItem="XdN-lk-iyC" firstAttribute="bottom" secondItem="v6R-VQ-gWT" secondAttribute="bottom" id="Bcz-IL-WAu"/>
+                            <constraint firstItem="XdN-lk-iyC" firstAttribute="trailing" secondItem="v6R-VQ-gWT" secondAttribute="trailing" id="DL9-b7-IFI"/>
+                            <constraint firstItem="UXO-WT-RfN" firstAttribute="top" secondItem="v6R-VQ-gWT" secondAttribute="top" id="akq-dq-EfB"/>
+                            <constraint firstItem="XdN-lk-iyC" firstAttribute="leading" secondItem="v6R-VQ-gWT" secondAttribute="leading" id="oLa-2q-WYw"/>
+                            <constraint firstItem="UXO-WT-RfN" firstAttribute="leading" secondItem="v6R-VQ-gWT" secondAttribute="leading" id="rLP-bo-r6R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v6R-VQ-gWT"/>
+                    </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="UXO-WT-RfN" id="8Sk-O9-zE0"/>
+                        <outlet property="pieChartView" destination="XdN-lk-iyC" id="ilw-hR-k6a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="So3-Qb-P8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2601" y="141"/>
+        </scene>
+        <!--Bubble Chart View Controller-->
+        <scene sceneID="Pct-er-4nM">
+            <objects>
+                <viewController id="exJ-PS-4iz" customClass="BubbleChartViewController" customModule="chartsProj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2j3-du-v59">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XDL-Rv-AKz" customClass="BubbleChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XDL-Rv-AKz" firstAttribute="trailing" secondItem="yII-jt-LBn" secondAttribute="trailing" id="KOL-3v-m51"/>
+                            <constraint firstItem="XDL-Rv-AKz" firstAttribute="leading" secondItem="yII-jt-LBn" secondAttribute="leading" id="jkz-SF-4kh"/>
+                            <constraint firstItem="XDL-Rv-AKz" firstAttribute="bottom" secondItem="yII-jt-LBn" secondAttribute="bottom" id="rF0-A2-AHD"/>
+                            <constraint firstItem="XDL-Rv-AKz" firstAttribute="top" secondItem="yII-jt-LBn" secondAttribute="top" id="u5q-gk-MG0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yII-jt-LBn"/>
+                    </view>
+                    <connections>
+                        <outlet property="bubbleChartView" destination="XDL-Rv-AKz" id="4CW-XO-5eX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YyI-70-s5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2600.8000000000002" y="884.70764617691157"/>
+        </scene>
+        <!--Bar Chart View Controller-->
+        <scene sceneID="6q5-3S-vor">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9aF-PJ-DGp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="osK-0H-lGG" customClass="BarChartViewController" customModule="chartsProj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Hs-9m-TuY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RxF-Ra-1A0" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RxF-Ra-1A0" firstAttribute="top" secondItem="ve9-bO-yaO" secondAttribute="top" id="WjS-wM-YeF"/>
+                            <constraint firstItem="RxF-Ra-1A0" firstAttribute="leading" secondItem="ve9-bO-yaO" secondAttribute="leading" id="pAl-bU-4f9"/>
+                            <constraint firstItem="RxF-Ra-1A0" firstAttribute="bottom" secondItem="ve9-bO-yaO" secondAttribute="bottom" id="wbd-FV-GMC"/>
+                            <constraint firstItem="RxF-Ra-1A0" firstAttribute="trailing" secondItem="ve9-bO-yaO" secondAttribute="trailing" id="ymC-Es-0Qq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ve9-bO-yaO"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="barChartView" destination="RxF-Ra-1A0" id="SLp-Pt-X6u"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2601" y="-651"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JYk-9t-l5O">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vXW-8W-WIJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Eqw-IR-xcd">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7or-Wp-Ab8" kind="relationship" relationship="rootViewController" id="pOB-PC-mZT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sjL-bN-VGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877.60000000000002" y="121.88905547226388"/>
+        </scene>
+    </scenes>
+</document>

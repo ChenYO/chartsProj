@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Zi-u2-Fz7">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chart View Controller-->
+        <scene sceneID="PpR-yF-fO2">
+            <objects>
+                <viewController id="7Zi-u2-Fz7" customClass="ChartViewController" customModule="chartsProj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LyZ-Em-rkM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXO-WT-RfN" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="64" width="375" height="290"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="290" id="inZ-de-eGp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XdN-lk-iyC" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="336" width="375" height="331"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="331" id="ArR-wm-iKw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UXO-WT-RfN" firstAttribute="trailing" secondItem="v6R-VQ-gWT" secondAttribute="trailing" id="3PD-Wx-RVz"/>
+                            <constraint firstItem="XdN-lk-iyC" firstAttribute="bottom" secondItem="v6R-VQ-gWT" secondAttribute="bottom" id="Bcz-IL-WAu"/>
+                            <constraint firstItem="XdN-lk-iyC" firstAttribute="trailing" secondItem="v6R-VQ-gWT" secondAttribute="trailing" id="DL9-b7-IFI"/>
+                            <constraint firstItem="UXO-WT-RfN" firstAttribute="top" secondItem="v6R-VQ-gWT" secondAttribute="top" id="akq-dq-EfB"/>
+                            <constraint firstItem="XdN-lk-iyC" firstAttribute="leading" secondItem="v6R-VQ-gWT" secondAttribute="leading" id="oLa-2q-WYw"/>
+                            <constraint firstItem="UXO-WT-RfN" firstAttribute="leading" secondItem="v6R-VQ-gWT" secondAttribute="leading" id="rLP-bo-r6R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v6R-VQ-gWT"/>
+                    </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="UXO-WT-RfN" id="8Sk-O9-zE0"/>
+                        <outlet property="pieChartView" destination="XdN-lk-iyC" id="ilw-hR-k6a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="So3-Qb-P8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2601" y="141"/>
+        </scene>
+    </scenes>
+</document>

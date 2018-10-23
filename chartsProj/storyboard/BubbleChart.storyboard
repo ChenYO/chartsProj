@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="exJ-PS-4iz">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bubble Chart View Controller-->
+        <scene sceneID="Pct-er-4nM">
+            <objects>
+                <viewController id="exJ-PS-4iz" customClass="BubbleChartViewController" customModule="chartsProj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2j3-du-v59">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XDL-Rv-AKz" customClass="BubbleChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XDL-Rv-AKz" firstAttribute="trailing" secondItem="yII-jt-LBn" secondAttribute="trailing" id="KOL-3v-m51"/>
+                            <constraint firstItem="XDL-Rv-AKz" firstAttribute="leading" secondItem="yII-jt-LBn" secondAttribute="leading" id="jkz-SF-4kh"/>
+                            <constraint firstItem="XDL-Rv-AKz" firstAttribute="bottom" secondItem="yII-jt-LBn" secondAttribute="bottom" id="rF0-A2-AHD"/>
+                            <constraint firstItem="XDL-Rv-AKz" firstAttribute="top" secondItem="yII-jt-LBn" secondAttribute="top" id="u5q-gk-MG0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yII-jt-LBn"/>
+                    </view>
+                    <connections>
+                        <outlet property="bubbleChartView" destination="XDL-Rv-AKz" id="4CW-XO-5eX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YyI-70-s5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2600.8000000000002" y="884.70764617691157"/>
+        </scene>
+    </scenes>
+</document>

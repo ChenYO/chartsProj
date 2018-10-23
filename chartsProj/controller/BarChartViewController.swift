@@ -31,13 +31,18 @@ class BarChartViewController: UIViewController {
     func setChart(dataPoints: [String], values: [Double]) {
         barChartView.noDataText = "You need to provide data for the chart."
         
-        var dataEntries: [BarChartDataEntry] = []
+        // Set xAxis
+        barChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: months)
+        barChartView.xAxis.granularity = 1
         
+        // Set Value
+        var dataEntries: [BarChartDataEntry] = []
         for i in 0..<dataPoints.count {
-            let dataEntry = BarChartDataEntry(x: Double(i), yValues: [values[i]])
+            let dataEntry = BarChartDataEntry(x: Double(i), y: values[i])
             dataEntries.append(dataEntry)
         }
         
+        // Set DataSet to show our data
         let chartDataSet = BarChartDataSet(values: dataEntries, label: "Units Sold")
         let chartData = BarChartData(dataSet: chartDataSet)
         barChartView.data = chartData

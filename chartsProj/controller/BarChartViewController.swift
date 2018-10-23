@@ -34,6 +34,7 @@ class BarChartViewController: UIViewController {
         // Set xAxis
         barChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: months)
         barChartView.xAxis.granularity = 1
+        barChartView.xAxis.labelPosition = .bottom
         
         // Set Value
         var dataEntries: [BarChartDataEntry] = []
@@ -44,6 +45,7 @@ class BarChartViewController: UIViewController {
         
         // Set DataSet to show our data
         let chartDataSet = BarChartDataSet(values: dataEntries, label: "Units Sold")
+        chartDataSet.colors = ChartColorTemplates.colorful()
         let chartData = BarChartData(dataSet: chartDataSet)
         barChartView.data = chartData
     }

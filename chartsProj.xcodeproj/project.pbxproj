@@ -21,6 +21,8 @@
 		76FB5A94217EC768001FBE51 /* dataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB5A93217EC768001FBE51 /* dataSet.swift */; };
 		76FB5A97217ED2BF001FBE51 /* ScatterChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB5A96217ED2BF001FBE51 /* ScatterChartViewController.swift */; };
 		76FB5A99217ED2EC001FBE51 /* ScatterChart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FB5A98217ED2EC001FBE51 /* ScatterChart.storyboard */; };
+		76FB5AA121801680001FBE51 /* RadarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB5AA021801680001FBE51 /* RadarViewController.swift */; };
+		76FB5AA32180169F001FBE51 /* Radar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FB5AA22180169F001FBE51 /* Radar.storyboard */; };
 		BAFA0F1C5DC13D7FE032A505 /* Pods_chartsProj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC716F8868739AC6D3F285B /* Pods_chartsProj.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		76FB5A93217EC768001FBE51 /* dataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataSet.swift; sourceTree = "<group>"; };
 		76FB5A96217ED2BF001FBE51 /* ScatterChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScatterChartViewController.swift; sourceTree = "<group>"; };
 		76FB5A98217ED2EC001FBE51 /* ScatterChart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ScatterChart.storyboard; sourceTree = "<group>"; };
+		76FB5AA021801680001FBE51 /* RadarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarViewController.swift; sourceTree = "<group>"; };
+		76FB5AA22180169F001FBE51 /* Radar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Radar.storyboard; sourceTree = "<group>"; };
 		AAEBE65EC9482E002A69D231 /* Pods-chartsProj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chartsProj.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chartsProj/Pods-chartsProj.debug.xcconfig"; sourceTree = "<group>"; };
 		C5B5730E7A0AB6E4D9650CE0 /* Pods-chartsProj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chartsProj.release.xcconfig"; path = "Pods/Target Support Files/Pods-chartsProj/Pods-chartsProj.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +111,7 @@
 				76FB5A84217DC245001FBE51 /* ChartViewController.swift */,
 				76FB5A86217EC020001FBE51 /* BubbleChartViewController.swift */,
 				76FB5A96217ED2BF001FBE51 /* ScatterChartViewController.swift */,
+				76FB5AA021801680001FBE51 /* RadarViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 		76FB5A8A217EC0F2001FBE51 /* storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				76FB5AA22180169F001FBE51 /* Radar.storyboard */,
 				76FB5A98217ED2EC001FBE51 /* ScatterChart.storyboard */,
 				76FB5A91217EC62B001FBE51 /* BubbleChart.storyboard */,
 				76FB5A8F217EC604001FBE51 /* LineAndPieChart.storyboard */,
@@ -200,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76FB5A99217ED2EC001FBE51 /* ScatterChart.storyboard in Resources */,
+				76FB5AA32180169F001FBE51 /* Radar.storyboard in Resources */,
 				76FB5A7A217DBC59001FBE51 /* LaunchScreen.storyboard in Resources */,
 				76FB5A8C217EC171001FBE51 /* BarChart.storyboard in Resources */,
 				76FB5A90217EC604001FBE51 /* LineAndPieChart.storyboard in Resources */,
@@ -260,6 +267,7 @@
 				76FB5A94217EC768001FBE51 /* dataSet.swift in Sources */,
 				76FB5A70217DBC55001FBE51 /* AppDelegate.swift in Sources */,
 				76FB5A87217EC020001FBE51 /* BubbleChartViewController.swift in Sources */,
+				76FB5AA121801680001FBE51 /* RadarViewController.swift in Sources */,
 				76FB5A97217ED2BF001FBE51 /* ScatterChartViewController.swift in Sources */,
 				76FB5A83217DC239001FBE51 /* BarChartViewController.swift in Sources */,
 			);

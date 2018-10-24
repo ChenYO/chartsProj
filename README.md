@@ -78,3 +78,24 @@
     let bubbleData = BubbleChartData(dataSets: [bubbleDataSet, bubbleDataSet2])
         
     bubbleChartView.data = bubbleData
+
+# Scatter Chart Example
+    
+    var dataEntries: [ChartDataEntry] = []
+        
+    for i in 0..<dataPoints.count {
+        let dataEntry = ChartDataEntry(x: Double(i), y: values[i])
+        dataEntries.append(dataEntry)
+    }
+        
+    let scatterDataSet = ScatterChartDataSet(values: dataEntries, label: "Units Sold")
+    scatterDataSet.setScatterShape(.circle)
+    scatterDataSet.scatterShapeHoleColor = ChartColorTemplates.colorful()[3]
+    scatterDataSet.scatterShapeHoleRadius = 3.5
+    scatterDataSet.setColor(ChartColorTemplates.colorful()[1])
+    scatterDataSet.scatterShapeSize = 12
+        
+    let scatterData = ScatterChartData(dataSets: [scatterDataSet])
+    scatterData.setValueFont(.systemFont(ofSize: 14, weight: .light))
+       
+    scatterChartView.data = scatterData
